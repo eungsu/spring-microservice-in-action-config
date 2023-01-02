@@ -1,11 +1,11 @@
 eureka:
   instance:
-    preferIpAddress: true
+    hostname: book-service
   client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://localhost:8070/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka
 
 spring:
   datasource:
